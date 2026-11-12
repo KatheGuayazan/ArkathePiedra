@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Piedra, Papel o Tijera AR</title>
+  <link rel="stylesheet" href="./Styles/Style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-three.prod.js"></script>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <h1>PIEDRA, PAPEL O TIJERA AR</h1>
+      <p id="round-indicator" class="round-indicator">Ronda 1</p>
+    </header>
+
+    <section id="intro-panel" class="panel">
+      <p>Escanea dos figuras diferentes para descubrir quién gana.</p>
+      <div class="game-options">
+        <label for="rounds-input">Cantidad de rondas</label>
+        <input id="rounds-input" type="number" min="1" max="99" value="3">
+
+        <span class="option-label">Modo de detección</span>
+        <div class="mode-options">
+          <label><input type="radio" name="detection-mode" value="sequential" checked> Uno por uno</label>
+          <label><input type="radio" name="detection-mode" value="simultaneous"> Al mismo tiempo</label>
+        </div>
+      </div>
+      <button id="start-button" class="primary-button" type="button">COMENZAR</button>
+    </section>
+
+    <section id="status-panel" class="panel status-panel" aria-live="polite">
+      <p id="status-message">Listo para comenzar.</p>
+    </section>
+
+    <section id="ar-container" class="ar-container" aria-label="Vista de realidad aumentada"></section>
+
+    <section id="result-panel" class="panel result-panel" aria-live="polite" hidden>
+      <p class="eyebrow">RESULTADO DE LA RONDA</p>
+      <h2 id="result-title"></h2>
+      <p id="result-message"></p>
+      <p id="figures-played"></p>
+      <p id="scoreboard"></p>
+      <button id="next-round-button" class="primary-button" type="button">SIGUIENTE RONDA</button>
+    </section>
+  </main>
+  <script type="module" src="./JS/JuegoPapelTijeraPiedra..js"></script>
+</body>
+</html>

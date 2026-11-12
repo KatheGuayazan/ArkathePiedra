@@ -1,0 +1,15 @@
+{
+  "name": "arkathe-piedra",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.152.2"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0"
+  }
+}
