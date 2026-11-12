@@ -86,7 +86,10 @@ h1 { margin: 0; font-size: clamp(1.15rem, 3vw, 2rem); letter-spacing: .06em; }
   z-index: 1;
   pointer-events: none;
 }
-.ar-container video, .ar-container canvas { max-width: none; }
+.ar-container video, .ar-container canvas {
+  max-width: none;
+  transform: scaleX(-1);
+}
 .result-panel { margin-top: 1rem; }
 .result-panel[hidden], #intro-panel[hidden], #status-panel[hidden] { display: none; }
 .eyebrow { margin: 0; color: #a4d96c; font-size: .78rem; font-weight: 700; letter-spacing: .14em; }
