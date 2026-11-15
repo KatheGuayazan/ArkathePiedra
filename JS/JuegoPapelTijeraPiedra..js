@@ -583,7 +583,10 @@ async function startExperience() {
 
       container: elements.ar,
 
-      imageTargetSrc: "./Targets/Los3Targets.mind",
+      imageTargetSrc: new URL(
+        "../Targets/Los3Targets.mind",
+        import.meta.url
+      ).href,
 
       maxTrack: 2,
 
