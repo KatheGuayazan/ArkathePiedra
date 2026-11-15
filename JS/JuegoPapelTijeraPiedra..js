@@ -12,7 +12,7 @@ const TARGETS = [
     modelName: "Roca",
     modelPath: new URL("../Modelo/Roca.fbx", import.meta.url).href,
     texturePath: new URL(
-      "../Modelo/texturasRoca/Stylized Rock 001 Base (Normal).png",
+      "../Modelo/TexturasRoca/Stylized Rock 001 Base (Normal).png",
       import.meta.url
     ).href,
     maxSize: 0.85
@@ -20,7 +20,7 @@ const TARGETS = [
   {
     name: "Papel",
     modelName: "Papel",
-    modelPath: new URL("../Modelo/paper.fbx", import.meta.url).href,
+    modelPath: new URL("../Modelo/Paper.fbx", import.meta.url).href,
     texturePath: new URL(
       "../Modelo/TexturasPapel/paper tablet_Material_BaseColor.png",
       import.meta.url
